@@ -4,9 +4,10 @@
 This spreadhseet aids authoring, editing, and version control when working with Mermaid diagrams.
 
 ### Key features:
-1. consistent format enforcement
-2. loose hashing to quickly identify changed diagrams
-3. Title and hash display within the diagram
+flow diagrams with font awesome support
+sequence diagrams with hashing and titling
+state diagrams
+quadrants
 
 ### Prerequisites
 - Basic knowledge of mermaid [flowchart]([url](https://mermaid.js.org/syntax/flowchart.html)) and [sequence]([url](https://mermaid.js.org/syntax/sequenceDiagram.html)) diagram construction
