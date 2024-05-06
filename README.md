@@ -10,6 +10,7 @@ This spreadhseet aids authoring, editing, and version control when working with 
 - state diagrams
 - quadrants
 - gantt
+- user journey
 
 ### Prerequisites
 - Basic knowledge of mermaid [flowchart]([url](https://mermaid.js.org/syntax/flowchart.html)) and [sequence]([url](https://mermaid.js.org/syntax/sequenceDiagram.html)) diagram construction
