@@ -61,13 +61,74 @@ end
 ```
 
 #### flow diagram
-
+``` mermaid
+flowchart TD
+1(((fa:fa-bell start)))-->|1: start|2(step1)
+2(step1)-->|2: goto step2|3[(fa:fa-database step2)]
+3[(fa:fa-database step2)]-->2(step1)
+4(step3)-->|3: goto step4|5(step4)
+4(step3)-->|4: goto step1|2(step1)
+4(step3)-->|5: goto step 1|3[(fa:fa-database step2)]
+5(step4)-->|6: end|6(end)
+```
 
 #### entity diagram
+``` mermaid
+erDiagram
 
+%% Entities
+Manufacturer||--||Car : "1:*"
+Car||--||Named-Driver : "1:1"
+Person||--||Named-Driver : "1:1"
+household||--||Person : "*:1"
+
+%% Attributes
+Named-Driver{
+string carRegistrationNumber PK, FK
+string driversLicense FK, UK
+}
+Car{
+string make "my comment"
+string model
+json parts
+%% no spaces allowed in attribute: reg number
+string VIN UK
+}
+Person{
+string driversLicense UK
+json name
+polygon serviceArea
+string phone UK
+string householdUUID FK
+string personUUID PK
+}
+household{
+string householdUUID PK
+json address
+string personUUID FK
+}
+```
 
 #### gantt chart
+``` mermaid
+gantt
 
+%% Setup
+dateFormat dd-mmm
+title Example GANTT
+excludes weekends
+
+%% Tasks
+section Section 1
+Task A : done, 29-Apr, 9d
+Crit bug fix : crit, 01-May, 4d
+Finish work : done, 05-May, 7d
+section Section 2
+Another Task : active, 12-May, 14d
+section lastSection
+document : active, 12-May, 3d
+publish : milestone, 15-May, d
+```
 #### user journey
 
 
