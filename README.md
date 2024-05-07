@@ -4,6 +4,7 @@
 This spreadhseet aids authoring, editing, and version control when working with Mermaid diagrams.
 
 ### Key features:
+- class diagrams
 - flow diagrams with font awesome and autonumbering support
 - entity diagrms 
 - sequence diagrams with hashing and titling
