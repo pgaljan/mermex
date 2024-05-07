@@ -130,10 +130,53 @@ document : active, 12-May, 3d
 publish : milestone, 15-May, d
 ```
 #### user journey
+``` mermaid
+journey
 
+%% Title
+title Customer Experience Lifecycle
+
+%% Tasks
+section Sales
+Sales Engagement : 7 : sales
+Discovery : 4 : presales
+Price Negotiation : 1 : sales
+section Delivery
+Delivery timing : 5 : services
+Installation : 4 : services
+Knowledge Transfer : 3 : education, services
+section Operation
+HW Support : 5 : services
+SW Support : 3 : services
+SLA : 4 : logistics
+
+```
 
 #### quadrant
+``` mermaid
+quadrantChart
 
+%% Quadrant Setup
+title Example Quadrant
+quadrant-1 Quad 1
+quadrant-2 Quad 2
+quadrant-3 Quad 3
+quadrant-4 Quad 4
+
+%% Axis Setup
+x-axis low --> high
+y-axis low --> high
+
+%% values
+Label 1: [0.4, 0.7]
+Label 2: [0.56, 0.98]
+Label 3: [0.09, 0.35]
+Label 4: [0.67, 0.83]
+Label 5: [0.75, 0.92]
+Label 6: [0.01, 0.68]
+Label 7: [0.4, 0.37]
+
+```
 
 #### sequence
 
