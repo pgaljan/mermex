@@ -25,39 +25,59 @@ All worksheets can be safely duplicated in the same workbook.
 ### Examples
 #### Class diagrams
 ``` mermaid
-sequenceDiagram
-autonumber
+classDiagram
+direction LR
 
-%% Actors
-Participant authenticator
-Actor user
+%% Relationships
+card "0..1" -- "1" traveler
+traveler "1" -- |> ticket
+ticket "1" o-- "1..n" coupon
+coupon "0..1" -- "0..1" available seat
+coupon "1" .. "*" luggage
+coupon "*" -- "1" flight
+flight "*" -- "1" flightNumber
+flightNumber "1..*" -- "1" airport : start
+airport "1" -- "1..*" flightNumber : goal
+flight "*" -- "1" planeModel
+planeModel "1" o-- "n" seat : has
+planeModel "1" -- "*" airplane
+available seat "*" -- "1" seat
 
-%% Boxes
+%% Members
+card : -id
+card : +miles
+traveler : #DoB~date~
+traveler : #name
+ticket : +code
+ticket : +number~str~
+coupon : redemption~date~
+coupon : class
+coupon : standby~bool~
+luggage : number~int~
+luggage : weight~int~
+airport : +name
+flightNumber : +departure~utc~*
+flightNumber : +desc
+flightNumber : +type
+flightNumber : +airline
+flight : +boardingTime~utc~
+flight : +flightPath~json~
+planeModel : +description
+planeModel : +picture~png~
+seat : row~int~
+seat : column~str~
+seat : class~str~
+airplane : +regNumber~str~$
+airplane : +status
+airplane : -nextMaintTime~utc~
 
-%% Diagram
-loop 
-user->>app: userID
-app->>authenticator: open with userID
-end 
-alt has account
-authenticator->>authenticator: map userID to cred
-else no account
-app-->>user: user onboard
-end 
-authenticator-->>user: password challenge
-user->>authenticator: password
-authenticator-->>user: otc challenge
-user->>authenticator: one-time code
-user->>authenticator: one-time code
-destroy authenticator
-authenticator->>app: token
-app->>user: session established
-Box gray front
-Actor user
-end
-Box middle
-Participant authenticator
-end
+%% Links
+link luggage "https://mermaid.js.org/syntax/classDiagram.html" 
+
+%% Notes
+note "Airline Booking System" 
+note for luggage "Try the link!" 
+
 ```
 
 #### flow diagram
@@ -179,6 +199,40 @@ Label 7: [0.4, 0.37]
 ```
 
 #### sequence
+``` mermaid
+sequenceDiagram
+autonumber
 
+%% Actors
+Participant authenticator
+Actor user
+
+%% Boxes
+
+%% Diagram
+loop 
+user->>app: userID
+app->>authenticator: open with userID
+end 
+alt has account
+authenticator->>authenticator: map userID to cred
+else no account
+app-->>user: user onboard
+end 
+authenticator-->>user: password challenge
+user->>authenticator: password
+authenticator-->>user: otc challenge
+user->>authenticator: one-time code
+user->>authenticator: one-time code
+destroy authenticator
+authenticator->>app: token
+app->>user: session established
+Box gray front
+Actor user
+end
+Box middle
+Participant authenticator
+end
+```
 
 
