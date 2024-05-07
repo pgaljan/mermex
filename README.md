@@ -1,7 +1,7 @@
 # Mermex
 ### Excel-based Mermaid editor
 
-This [spreadhseet]([url](https://github.com/pgaljan/mermex/blob/main/mermex.xlsx)) aids authoring, editing, and version control when working with Mermaid diagrams.
+This [macro-free excel workbook](https://github.com/pgaljan/mermex/blob/main/mermex.xlsx) aids authoring, editing, and version control when working with Mermaid diagrams.
 
 ### Key features:
 - class diagrams
