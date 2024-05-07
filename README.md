@@ -14,7 +14,7 @@ This [macro-free excel workbook](https://github.com/pgaljan/mermex/blob/main/mer
 - user journey
 
 ### Prerequisites
-- Basic knowledge of mermaid [flowchart]([url](https://mermaid.js.org/syntax/flowchart.html)) and [sequence]([url](https://mermaid.js.org/syntax/sequenceDiagram.html)) diagram construction
+- Basic knowledge of mermaid [flowchart](https://mermaid.js.org/syntax/flowchart.html) and [sequence](https://mermaid.js.org/syntax/sequenceDiagram.html) diagram/chart construction
 - Excel 365 (leverages VSTACK which is not available with other excel builds)
 
 ### Usage
