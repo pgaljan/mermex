@@ -22,4 +22,26 @@ Construct the diagrams in the main table on each tab.  Copy and paste the mermai
 
 All worksheets can be safely duplicated in the same workbook.
 
-![demo](https://github.com/pgaljan/mermex/blob/main/mermex_demo.gif)
+### Examples
+#### Class diagrams
+![image](https://github.com/pgaljan/mermex/assets/11296072/09b9f468-ab30-4f0c-9096-e571a47e53da)
+
+#### flow diagram
+![image](https://github.com/pgaljan/mermex/assets/11296072/117e2e9d-0d6f-43c5-8b13-b2b3a65703ab)
+
+#### entity diagram
+![image](https://github.com/pgaljan/mermex/assets/11296072/fcb9a450-a23a-43ae-878d-07b681dcd2d4)
+
+#### gantt chart
+![image](https://github.com/pgaljan/mermex/assets/11296072/36289a37-9c06-4494-bcbc-08b8cc9ca82a)
+
+#### user journey
+![image](https://github.com/pgaljan/mermex/assets/11296072/219de321-b5a8-48f9-9c13-b6a7165790da)
+
+#### quadrant
+![image](https://github.com/pgaljan/mermex/assets/11296072/61a8e05a-42cd-4134-99ad-62199ef9bd88)
+
+#### sequence
+![image](https://github.com/pgaljan/mermex/assets/11296072/ceab4775-5615-4b1a-a263-1a0399dfac84)
+
+
