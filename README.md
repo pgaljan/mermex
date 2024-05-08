@@ -177,25 +177,40 @@ SLA : 4 : logistics
 quadrantChart
 
 %% Quadrant Setup
-title Example Quadrant
-quadrant-1 Quad 1
-quadrant-2 Quad 2
-quadrant-3 Quad 3
-quadrant-4 Quad 4
+title Good and Bad ideas  (https://xkcd.com/2929/)
 
 %% Axis Setup
-x-axis low --> high
-y-axis low --> high
+x-axis sounds good --> sounds bad
+y-axis actually good --> actually bad
 
 %% values
-Label 1: [0.4, 0.7]
-Label 2: [0.56, 0.98]
-Label 3: [0.09, 0.35]
-Label 4: [0.67, 0.83]
-Label 5: [0.75, 0.92]
-Label 6: [0.01, 0.68]
-Label 7: [0.4, 0.37]
-
+Always saying what you think: [0.3, 0.76]
+Asbestos: [0.15, 0.85]
+Bloodletting: [0.85, 0.95]
+Combo washer dryers: [0.15, 0.45]
+Crumple zones: [0.75, 0.25]
+cutting pizza in squares: [0.59, 0.59]
+Cutting sandwiches diagonally: [0.36, 0.36]
+Diverging diamond interchanges: [0.7, 0.4]
+Eating citrus fruit while at sea: [0.5, 0.22]
+Extension cores with prongs on both ends: [0.5, 0.99]
+Fake prank fire extinguishers: [0.98, 0.92]
+Fecal transplants: [0.9, 0.05]
+Heat pumps: [0.22, 0.04]
+Heelies: [0.4, 0.6]
+Laser eye surgery: [0.64, 0.05]
+Leaded Gasoline: [0.2, 0.95]
+Pizza: [0.24, 0.08]
+Prequels: [0.1, 0.55]
+Project Orion: [0.9, 0.6]
+Putting mold on infections: [0.9, 0.15]
+Replying to spammers: [0.56, 0.7]
+sliced bread: [0.05, 0.15]
+Solar cars: [0.05, 0.6]
+soup: [0.5, 0.5]
+Stair Kayaking: [0.75, 0.8]
+Toasting sandwiches: [0.25, 0.2]
+Wheels on luggage: [0, 0.05]
 ```
 
 #### sequence
