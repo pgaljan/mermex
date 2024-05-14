@@ -210,7 +210,7 @@ Solar cars: [0.05, 0.6]
 soup: [0.5, 0.5]
 Stair Kayaking: [0.75, 0.8]
 Toasting sandwiches: [0.25, 0.2]
-Wheels on luggage: [0, 0.05]
+Wheels on luggage: [0.05, 0.10]
 ```
 
 #### sequence
